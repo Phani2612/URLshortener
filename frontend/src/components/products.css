@@ -1,0 +1,36 @@
+.products-container {
+    box-sizing: border-box;
+    max-width: 960px;
+    height: 360px;
+    width: 900px;
+    /* justify-content: right; */
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: none;
+    border: 1px solid red;
+  }
+  
+  .box {
+    height: 350px; /* Adjust height as needed */
+    min-height: 250px ;
+    width: 250px;
+    border: 2px rgb(160, 157, 157);
+    border-style: outset;
+    /* box-shadow: -5px 10px 10px rgba(38, 39, 46, 0.5); */
+    border-radius: 15px;
+    background-color: #fff;
+   
+  }
+
+  .first-box{
+    /* margin-left: 0;
+    margin-right: 1rem; */
+    float: left;
+  }
+
+  .third-box{
+    float: right;
+   }

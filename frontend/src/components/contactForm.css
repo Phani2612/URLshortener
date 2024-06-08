@@ -1,0 +1,156 @@
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    width: 100vw;
+    background-color: transparent; 
+    padding:  20px; /* Padding for mobile responsiveness */
+    box-shadow: #333;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group{
+    width: 100%;
+}
+
+.form-row {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Gap between form inputs */
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.form-label{
+    display:block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: large;
+    justify-content: center;
+}
+/* .form-error{
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+} */
+
+.contact-form {
+    width: 40%;
+    height: fit-content;
+    background-color: white; 
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+}
+
+
+.contact-form input
+ {
+    width: 97%; 
+    height: 30px; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 10px 10px; 
+    margin-bottom: 15px;
+    margin-right: 10px; 
+    background-color: #e0e0e0; 
+    color: #333; 
+    outline: none; 
+    font-size: 16px; 
+}
+.contact-form textarea{
+    width: 97%; 
+    height: 100px; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 10px 10px; 
+    margin-bottom: 15px;
+    margin-right: 10px; 
+    background-color: #e0e0e0; 
+    color: #333; 
+    outline: none; 
+    font-size: 16px; 
+}
+
+.button-container {
+    display: flex; /* This aligns the buttons horizontally */
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Add spacing between the buttons */
+    margin-top: 10px; /* Add spacing above the buttons */
+}
+
+.send-btn, .home-button {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send-btn {
+    display: inline-block;
+    width: 120px;
+    padding: 10px 20px;
+    margin-top: 10px; 
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.send-btn:hover {
+    background-color: #0056b3; 
+}
+
+.home-button {
+    display: inline-block;
+    width: 120px;
+    padding: 10px 20px;
+    margin-top: 10px; 
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+.phone-group {
+    margin-bottom: 15px;
+}
+
+.phone-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+}
+
+.phone-inputs .form-input {
+    width: 50%; /* Adjust width of phone input */
+}
+
+.phone-inputs .react-tel-input {
+    width: 1 0%; /* Adjust width of country code input */
+}

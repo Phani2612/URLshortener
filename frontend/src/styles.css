@@ -1,0 +1,150 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #BFFCFF;
+  }
+  
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */ 
+    max-width: 100%;
+    margin-inline: auto;
+  
+  }
+  
+  .logo-container { 
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 200px;
+    height: 200px;/* Fixed width */
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+   .logo{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+   }
+  
+   .carousel{
+    max-width: 100%;
+   }
+  
+   .carousel-content{
+    max-width: 100%;
+    align-items: center;
+    font-weight: 550;
+    font-size: x-large;
+  }
+  
+  .url-shortener-container {
+    border: 0.5px solid #000;
+    border-radius: 25px;
+    background-color: #D3F6F8;
+    padding: 2rem;
+    margin-bottom: 100px;  
+    align-items: center;
+    width: 800px;
+    height: auto;
+    max-width: 700px;
+    box-shadow: -5px 10px 10px rgba(93, 121, 122, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    min-width: 300px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    flex-direction: column;
+  }
+  
+  .input-container input {
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid black;
+    border-radius: 25px;
+    font-size: large;
+   }
+  
+  .output-container {
+    position: relative;
+    margin-top: 4%;
+    margin-right: none;
+    margin-left: none;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .output-container p{
+    height:20px;
+    margin-bottom: none;
+    margin-top: auto;
+    padding: none;
+    display: fixed;
+    float: center;
+  }
+  
+  .output-container input {
+    box-sizing: border-box;
+    border: 0.5px solid black;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    width: 400px; 
+    height: 40px;
+    margin-right: none;
+    margin-left: none;
+    font-size: large; 
+  }
+  
+  .shorten-button{
+    width: 200px;
+    height: 40px;
+    border: 0.5px solid black;
+    border-radius: 25px;
+    margin-left: 2rem;
+    background-color: #7FD3FA;
+    font-size: large;
+    position: relative;  
+  }
+  
+  .shorten-button:hover{
+    background-color: #4db0df;
+  }
+  
+  .icons{
+    height: 40px;
+    width: 100px;
+    box-sizing: border-box;
+    border: #000 solid 0.5px;
+    border-left: none;
+    border-radius: 0 25px 25px 0; 
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    margin-left: none;
+  }
+  
+  .qr-icon, .copy-icon{
+    height: 20px;
+    width: 20px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  
+  
