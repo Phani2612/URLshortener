@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {nanoid} from 'nanoid';
 import QRModal from './QRModal';
+import SERVER_URL  from './URL';
 function URLShortener() {
   const [originalUrl, setOriginalUrl] = useState('');
   const [shortenedUrl, setShortenedUrl] = useState('');
@@ -56,7 +57,7 @@ const saveUrlPair = async (originalUrl, shortenedUrl) => {
   try {
     console.log(originalUrl);
     console.log(shortenedUrl);
-    const response = await fetch("http://localhost:5000/save-urls", { 
+    const response = await fetch(`${SERVER_URL}/save-urls`, { 
       method: 'POST',
       mode: 'cors',
       headers: {
@@ -95,7 +96,7 @@ const handleSubmit = async () => {
         const isValidUrl = await checkLongUrl(originalUrl);  
         if(isValidUrl){
           const shortUrl = generateShortUrl();
-          const fullShortUrl = `localhost:5000/${shortUrl}`; //4necotech.in/${shortUrl}
+          const fullShortUrl = `http://localhost:5000/${shortUrl}`; //4necotech.in/${shortUrl}
           // console.log("Full short url",fullShortUrl)
           setShortenedUrl(fullShortUrl); 
           navigator.clipboard.writeText(fullShortUrl);

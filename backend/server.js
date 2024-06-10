@@ -6,6 +6,8 @@ const app = express();
 const cors = require('cors');
 const PORT = process.env.PORT || 5000
 
+const MONGODBATLAS = process.env.MONGODBATLAS
+
 // const {dbString} = require('./config')
 
 /*let corsAllow = {
@@ -39,7 +41,7 @@ app.use(cors())
 
 
 
-mongoose.connect('mongodb+srv://Phani2612:2612@cluster0.nxfzz84.mongodb.net/Checkingdatabase?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect(MONGODBATLAS, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
